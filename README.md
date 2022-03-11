@@ -1,4 +1,4 @@
-# Collection of coding adventures utilizing the P5 library
+# Collection of coding adventures and generative art
 
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain), empowerd by [p5py](https://github.com/p5py/p5), implemented by Marcel Rosier.
 
