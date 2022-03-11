@@ -39,8 +39,13 @@ def draw():
 
 
 def key_pressed(event):
+    global n, d
     if event.key == 's':
-        save_frame(f"maurer_n{n}_d{d}.png")
+        save(f"maurer_n{n}_d{d}_sid.png")
+    elif event.key == 'n':
+        n = int(random_uniform(2, 12))
+        d = int(random_uniform(5, 250))
+        draw()
 
 
 run(frame_rate=1)
