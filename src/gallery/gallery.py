@@ -2,6 +2,8 @@ from __future__ import annotations
 from typing import List
 from p5 import *
 
+github_bg_color = (14, 17, 23)  # "#0E1117"
+
 
 class Frame():
 
@@ -11,8 +13,8 @@ class Frame():
         self.y: int = y
         self.frame = load_image('../../media/assets/frame.png')
         self.padding = 25
-        self.width: int = width - 2*self.padding
-        self.height: int = height - 2*self.padding
+        self.width: int = width - 2 * self.padding
+        self.height: int = height - 2 * self.padding
 
     def draw(self):
         image(self.img, self.x + self.padding, self.y +
@@ -56,15 +58,15 @@ def load_frame_imgs(folder_path: str) -> List(PImage):
 
 
 def setup():
-    size(1200, 1200)
+    size(1500, 900)
     no_loop()
     global wall
-    frame_imgs = load_frame_imgs('../maurer_rose')[:16]
+    frame_imgs = load_frame_imgs('../../media/maurer_rose/single_files')[:15]
     wall = FrameWall(frame_imgs)
 
 
 def draw():
-    background(10)
+    background(14, 17, 23)
     wall.draw()
 
 
