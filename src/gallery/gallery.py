@@ -3,6 +3,9 @@ from typing import List
 from p5 import *
 
 github_bg_color = (14, 17, 23)  # "#0E1117"
+global rows, cols
+rows = 3
+cols = 5
 
 
 class Frame():
@@ -27,13 +30,13 @@ class FrameWall():
 
     def __init__(self, frames_imgs):
         self.frames = []
-        self.rows = 3
-        self.cols = ceil(len(frames_imgs)/self.rows)
+        self.rows = rows
+        self.cols = cols
         self.width = 300
 
         for y in range(self.rows):
             for x in range(self.cols):
-                index = y*self.rows + x
+                index = y*self.cols + x
                 if index >= len(frames_imgs):
                     break
                 self.frames.append(Frame(img=frames_imgs[index],
@@ -58,10 +61,12 @@ def load_frame_imgs(folder_path: str) -> List(PImage):
 
 
 def setup():
-    size(1500, 900)
+    size(cols*300, rows*300)
     no_loop()
     global wall
-    frame_imgs = load_frame_imgs('../../media/maurer_rose/single_files')[:15]
+    path = '../../media/maurer_rose/single_files'
+    # path = "/Users/marcelrosier/Projects/personal/p5_projects/src/lissajou"
+    frame_imgs = load_frame_imgs(path)[:(rows*cols)]
     wall = FrameWall(frame_imgs)
 
 
