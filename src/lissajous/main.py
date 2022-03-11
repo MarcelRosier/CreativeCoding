@@ -23,7 +23,7 @@ class Part():
                               sin(self.angle) * self.length)
 
     def draw(self):
-        if not self.show:
+        if not self.show and self.trace:
             return
         if self.parent:
             translate(*self.parent.cur_pos)
@@ -38,8 +38,10 @@ class Part():
             #         random_uniform(1.4, 4), random_uniform(1.4, 4))
             circle(self.cur_pos.x, self.cur_pos.y, random_uniform(2, 4))
         else:
+            if not self.parent:
+                circle(0, 0, 10)
             line(0, 0, self.cur_pos.x, self.cur_pos.y)
-            circle(self.cur_pos.x, self.cur_pos.y, 3)
+            circle(self.cur_pos.x, self.cur_pos.y, 6)
 
 
 def setup():
