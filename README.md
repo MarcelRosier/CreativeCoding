@@ -6,8 +6,12 @@ Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and var
 ![worley_gallery](media/worley_noise/worley_gallery.png)
 
 ## Branching
+Recursive branch visualization
+<p float="left">
+<img src="media/branches/brokoli_2.png" width="300" height="300"/>
+<img src="media/branches/brokoli_1.png" width="300" height="300"/>
+</p>
 
-![brokkoli](media/branches/brokoli_2.png)
 ## Lissajous-esk art
 <img align="left" src="media/lissajous/lj_explanation.gif" width="300" height="300"/>
 Depicting complex harmonic motion by highlighting axis points over time.   
