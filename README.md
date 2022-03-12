@@ -6,7 +6,7 @@ Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and var
 <img align="left" src="media/lissajous/lj_explanation.gif" width="300" height="300"/>
 Depicting complex harmonic motion by highlighting axis points over time.   
 Basis are multiple connected and randomized harmonic motions that use the end point of their predecessor as a starting point.
-Combining interdependently randomized paramters (axis length, rotating speed, visbility, size, ...) with common matplotlib color maps yields subjectively beautiful visuals.
+Combining interdependently randomized parameters (axis length, rotating speed, visbility, size, ...) with common matplotlib color maps yields subjectively beautiful visuals.
 
 ![lissajous_gallery](media/lissajous/lj_gallery_02.png)
 ## Maurer-Rose
