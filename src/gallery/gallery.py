@@ -72,7 +72,9 @@ def setup():
 
 
 def draw():
-    background(14, 17, 23)
+    # clear()
+    # background(14, 17, 23)
+    background(0, 255, 0)
     wall.draw()
 
 
