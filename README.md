@@ -3,6 +3,7 @@ A collection of somewhat artistic implementations of numerous mathematical sensa
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and various generative art conference talks, empowered by [p5py](https://github.com/p5py/p5).
 
 ## Worley Noise
+Visualization of a randomized and tuned [Worley-Noise](https://de.wikipedia.org/wiki/Worley_noise) implementation.
 ![worley_gallery](media/worley_noise/worley_gallery.png)
 
 ## Branching
