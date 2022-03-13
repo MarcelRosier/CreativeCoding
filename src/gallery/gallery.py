@@ -4,7 +4,7 @@ from p5 import *
 
 github_bg_color = (14, 17, 23)  # "#0E1117"
 global rows, cols
-rows = 2
+rows = 4
 cols = 5
 
 
@@ -64,9 +64,9 @@ def setup():
     size(cols*300, rows*300)
     no_loop()
     global wall
-    path = '../../media/worley_noise/single_files'
+    # path = '../../media/worley_noise/single_files'
     # path = '../../media/maurer_rose/single_files'
-    # path = "/Users/marcelrosier/Projects/personal/p5_projects/src/lissajou"
+    path = "/Users/marcelrosier/Projects/personal/p5_projects/media/lissajous/single_files"
     frame_imgs = load_frame_imgs(path)[:(rows*cols)]
     wall = FrameWall(frame_imgs)
 
