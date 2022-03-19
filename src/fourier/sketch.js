@@ -15,14 +15,14 @@ function drawEpiCycles(n) {
         let k = 2 * i + 1
         let prevX = x
         let prevY = y
-        let curRadius = radius / ((i + 1) * 2)
+        // let curRadius = radius / ((i + 1) * 2)
         // let curAngle = angle / (i * 2 + 1)
-        let curAngle = 4 * PI * angle / k * PI
+        const factor = 4 * radius / PI
         noFill()
         stroke(255, 100)
-        circle(prevX, prevY, curRadius * 2)
-        x += cos(curAngle) * curRadius
-        y += sin(curAngle) * curRadius
+        circle(prevX, prevY, radius * 2)
+        x += factor * cos(k * angle) / k
+        y += factor * sin(k * angle) / k
         stroke(255)
         line(prevX, prevY, x, y)
         // fill(255)
@@ -35,11 +35,11 @@ function drawEpiCycles(n) {
 }
 
 function draw() {
-    const N = 5;
+    const N = 10;
     background(0);
     translate(radius * 2, height / 2)
     drawEpiCycles(N)
-    const dt = 0.001
+    const dt = 0.05
     angle += dt
 
     //draw wave
