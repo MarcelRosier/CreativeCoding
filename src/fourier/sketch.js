@@ -20,7 +20,7 @@ function drawEpiCycles(n) {
         const factor = 4 * radius / PI
         noFill()
         stroke(255, 100)
-        circle(prevX, prevY, radius * 2)
+        circle(prevX, prevY, 2 * (factor / k))
         x += factor * cos(k * angle) / k
         y += factor * sin(k * angle) / k
         stroke(255)
@@ -35,7 +35,7 @@ function drawEpiCycles(n) {
 }
 
 function draw() {
-    const N = 10;
+    const N = 125;
     background(0);
     translate(radius * 2, height / 2)
     drawEpiCycles(N)
