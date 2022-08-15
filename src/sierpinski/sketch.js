@@ -1,8 +1,11 @@
 let edges;
 let start_point;
 let center_point;
-let growth_speed = 5;
+let growth_speed = 1;
 let domain_size = 800
+let stroke_weight = 1
+let epoch = 0
+let speed_increment_mod = 30
 
 function setup_sierpinski() {
   tri_len = 800
@@ -16,7 +19,7 @@ function setup_sierpinski() {
   point(v1)
   point(v2)
   point(v3)
-  start_point = createVector(tri_x + 400, tri_y + 200)
+  start_point = createVector(tri_x + 400, tri_y)
   center_point = createVector(tri_x + tri_len / 2, tri_mid_y / 2)
 }
 
@@ -42,7 +45,7 @@ function setup() {
   translate(0, height - height / 10)
   scale(1, -1)
   // draw triangle edge points
-  strokeWeight(5)
+  strokeWeight(stroke_weight)
   setup_sierpinski()
   // setup_random()
 
@@ -74,16 +77,10 @@ function draw() {
     point(start_point)
     start_point = chaos_step(start_point, edges)
   }
-
-
-  // translate(width / 2, height / 2)
-  // console.log(branches)
-  // for (let i = 0; i < branches.length; i++) {
-  //   push()
-  //   branches[i].show()
-  //   pop()
-  //   rotate(2 * PI / (i + 1))
-  // }
+  epoch++
+  if (epoch % speed_increment_mod == 0) {
+    growth_speed *= 1.5
+  }
 }
 
 function keyPressed(event) {
