@@ -2,11 +2,20 @@
 A collection of somewhat artistic implementations of numerous mathematical sensations and experiments.   
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and various generative art conference talks, empowered by [p5js](https://p5js.org/) and its python counterpart [p5py](https://github.com/p5py/p5).
 
+## Style transfer
+Combining the style of an image with the content of another utilizing the [Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) approach. Tutorial available [here](https://colab.research.google.com/drive/1rXkHKJzH9u2hs-OAqxDLNvotVxieg9S1#scrollTo=jxRrLNslsI2w)
+
+Content | Style | Result
+--- | --- | ---
+<img src="src/style_transfer/images/wanderer.jpeg" alt="drawing" width="100%" height="200"/> | <img src="src/style_transfer/images/style_2.jpeg" alt="drawing" width="100%" height="200"/> | <img src="src/style_transfer/wanderer_abstract_style_2.png" alt="drawing" width="100%" height="200"/>
+
+
 ## Mandelbrot Set
 Visualization of a zoom into the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set).  
 ![mandelbrot_zoom_gif](media/mandelbrot/mandelbrot_zoom.gif)
+
 ## Sierpinski Triangle (Chaos Game)
-Implementation of the [Chaos game](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle#Chaos_game) to visualize the Sierpinski Triangle.
+Implementation of the [Chaos game](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle#Chaos_game) to visualize the Sierpinski Triangle.  
 ![sierpinski_triangle_gif](media/sierpinski/sierpinski_triangle.gif)
 
 
