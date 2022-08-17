@@ -56,7 +56,7 @@ vgg.to(device)
 # load in content and style image
 content = load_image('images/wanderer.jpeg').to(device)
 # Resize style to match content, makes code easier
-style = load_image('images/style_2.jpeg', shape=content.shape[-2:]).to(device)
+style = load_image('images/oil_sea_style.jpeg', shape=content.shape[-2:]).to(device)
 
 # helper function for un-normalizing an image 
 # and converting it from a Tensor image to a NumPy image for display
