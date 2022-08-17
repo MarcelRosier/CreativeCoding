@@ -1,11 +1,12 @@
 let edges;
 let start_point;
 let center_point;
-let growth_speed = 1;
+let growth_speed = 10;
 let domain_size = 800
 let stroke_weight = 1
 let epoch = 0
-let speed_increment_mod = 30
+let speed_increment_mod = 20
+let new_point_fraction = .75
 
 function setup_sierpinski() {
   tri_len = 800
@@ -25,7 +26,7 @@ function setup_sierpinski() {
 
 function setup_random() {
   edges = []
-  nodes = Math.ceil(Math.random() * 5)
+  nodes = Math.ceil(Math.random() * 5) + 3
   for (let i = 0; i < nodes; i++) {
     edges.push(createVector(Math.random() * 800 + 100, Math.random() * 800 + 100))
     point(edges[i])
@@ -60,8 +61,8 @@ function get_random_index(range) {
 
 function chaos_step(last_point, edges) {
   let anchor = edges[get_random_index(edges.length)]
-  let new_x = Math.min(last_point.x, anchor.x) + Math.abs(anchor.x - last_point.x) / 2
-  let new_y = Math.min(last_point.y, anchor.y) + Math.abs(anchor.y - last_point.y) / 2
+  let new_x = Math.min(last_point.x, anchor.x) + Math.abs(anchor.x - last_point.x) * new_point_fraction
+  let new_y = Math.min(last_point.y, anchor.y) + Math.abs(anchor.y - last_point.y) * new_point_fraction
   return createVector(new_x, new_y)
 }
 
