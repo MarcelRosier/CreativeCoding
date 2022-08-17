@@ -54,7 +54,7 @@ vgg.to(device)
 # print (vgg)
 
 # load in content and style image
-content = load_image('images/friedensengel.jpeg').to(device)
+content = load_image('images/pisa.jpeg').to(device)
 # Resize style to match content, makes code easier
 style = load_image('images/ship_at_sea.jpeg', shape=content.shape[-2:]).to(device)
 
