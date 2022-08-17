@@ -2,6 +2,9 @@
 A collection of somewhat artistic implementations of numerous mathematical sensations and experiments.   
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and various generative art conference talks, empowered by [p5js](https://p5js.org/) and its python counterpart [p5py](https://github.com/p5py/p5).
 
+## Mandelbrot Set
+Visualization of a zoom into the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set).  
+![mandelbrot_zoom_gif](media/mandelbrot/mandelbrot_zoom.gif)
 ## Sierpinski Triangle (Chaos Game)
 Implementation of the [Chaos game](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle#Chaos_game) to visualize the Sierpinski Triangle.
 ![sierpinski_triangle_gif](media/sierpinski/sierpinski_triangle.gif)
