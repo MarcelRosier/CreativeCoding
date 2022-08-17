@@ -9,6 +9,8 @@ Content | Style | Result
 --- | --- | ---
 <img src="src/style_transfer/images/wanderer.jpeg" alt="drawing" width="100%" height="200"/> | <img src="src/style_transfer/images/style_2.jpeg" alt="drawing" width="100%" height="200"/> | <img src="media/style_transfer/wanderer_abstract_style_2.png" alt="drawing" width="100%" height="200"/>
 <img src="src/style_transfer/images/friedensengel.jpeg" alt="drawing" width="100%" height="200"/> | <img src="src/style_transfer/images/oil_sea_style.jpeg" alt="drawing" width="100%" height="200"/> | <img src="media/style_transfer/frieden_oil_ship.png" alt="drawing" width="100%" height="200"/>
+<img src="src/style_transfer/images/worker.jpeg" alt="drawing" width="100%" height="200"/> | <img src="src/style_transfer/images/vangogh.jpeg" alt="drawing" width="100%" height="200"/> | <img src="media/style_transfer/worker_vangogh.png" alt="drawing" width="100%" height="200"/>
+<img src="src/style_transfer/images/notre_dame.jpeg" alt="drawing" width="100%" height="200"/> | <img src="src/style_transfer/images/blue_geometric_shapes.jpeg" alt="drawing" width="100%" height="200"/> | <img src="media/style_transfer/notre_geo.png" alt="drawing" width="100%" height="200"/>
 
 
 ## Mandelbrot Set
