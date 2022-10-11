@@ -4,7 +4,7 @@ Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and var
 
 
 ## Forest on fire
-Simulation of a burning forest. Guided by a initial population, tree sparn and fire spawn probability. A fire can spread to surrounding trees and lives only for a single frame. Quite close code replicat of [this video](https://www.youtube.com/watch?v=lJ2VlcI_JuY).
+Simulation of a burning forest. Guided by an initial population, tree spawn and fire spawn probability. A fire can spread to surrounding trees and lives only for a single frame. Quite close code replication of [this video](https://www.youtube.com/watch?v=lJ2VlcI_JuY).
 ![forest on fire gif](media/forest_on_fire/forest.gif)
 ## Style transfer
 Combining the content of an image with the style of another utilizing the [Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) approach. Tutorial available [here](https://colab.research.google.com/drive/1rXkHKJzH9u2hs-OAqxDLNvotVxieg9S1#scrollTo=jxRrLNslsI2w)
