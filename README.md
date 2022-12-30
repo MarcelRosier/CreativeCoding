@@ -11,11 +11,10 @@ This results in a non-random pattern.
 
 
 ## Forest on fire
-<img align="left" src="media/forest_on_fire/forest.gif" width="400" height="400"/>
 
 Simulation of a burning forest. Guided by a initial population, tree spawn and fire spawn probability.  
 A fire can spread to surrounding trees and lives only for a single frame. Quite close code replication of [this video](https://www.youtube.com/watch?v=lJ2VlcI_JuY).
-<div style="clear:both;"></div>
+![forest gif](media/forest_on_fire/forest.gif)
 
 
 ## Style transfer
