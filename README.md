@@ -2,10 +2,23 @@
 A collection of somewhat artistic implementations of numerous mathematical sensations and experiments.   
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and various generative art conference talks, empowered by [p5js](https://p5js.org/) and its python counterpart [p5py](https://github.com/p5py/p5).
 
+## Ulam Spiral
+<img align="left" src="media/ulam_spiral/ulam_explanation.png" width="400" height="400"/>
+
+Implementation of the classical square [Ulam Spiral](https://en.wikipedia.org/wiki/Ulam_spiral).  
+Positive integers are arranged in a spiral while marking prime numbers.  
+This results in a non-random pattern.  
+<img align="left" src="media/ulam_spiral/ulam_viridis.png" width="800" height="800"/>
+
+<div style="clear:both;"></div>
+
 
 ## Forest on fire
+<img align="left" src="media/forest_on_fire/forest.gif" width="400" height="400"/>
 Simulation of a burning forest. Guided by a initial population, tree sparn and fire spawn probability. A fire can spread to surrounding trees and lives only for a single frame. Quite close code replicat of [this video](https://www.youtube.com/watch?v=lJ2VlcI_JuY).
-![forest on fire gif](media/forest_on_fire/forest.gif)
+<div style="clear:both;"></div>
+
+
 ## Style transfer
 Combining the content of an image with the style of another utilizing the [Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) approach. Tutorial available [here](https://colab.research.google.com/drive/1rXkHKJzH9u2hs-OAqxDLNvotVxieg9S1#scrollTo=jxRrLNslsI2w)
 
@@ -42,6 +55,8 @@ Recursive branch visualization
 Depicting complex harmonic motion by highlighting axis points over time.   
 Basis are multiple connected and randomized harmonic motions that use the end point of their predecessor as a starting point.
 Combining interdependently randomized parameters (axis length, rotating speed, visbility, size, ...) with common matplotlib color maps yields subjectively beautiful visuals.
+<div style="clear:both;"></div>
+
 
 ![lissajous_gallery](media/lissajous/lj_gallery_03.png)
 ## Maurer-Rose

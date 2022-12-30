@@ -1,9 +1,10 @@
 from __future__ import annotations
 from p5 import *
 from enum import auto
+import matplotlib
 
 SQUARE_SIZE = 4
-WIDTH = 300
+WIDTH = 400
 CIRCLE_RAD = SQUARE_SIZE // 2
 bg_color = (3, 2, 9)
 circle_color = (204, 81, 180, 250)
@@ -81,12 +82,16 @@ class Spiral:
             stroke(*line_color, 150)
             line(self.prev_x, self.prev_y, self.x, self.y)
         if is_prime(self.cur_step):
-            self.primes.append((self.x, self.y))
+            self.primes.append((self.x, self.y, self.cur_step))
 
-    def draw_primes(self):
-        for x, y in self.primes:
+    def draw_primes(self, cmap=None):
+        for x, y, num in self.primes:
             no_stroke()
-            fill(*circle_color)
+            if cmap:
+                r, g, b, a = cmap(remap(num, (self.cur_step, 0), (0, 1)))
+                fill(r*255, g*255, b*255, a*255)
+            else:
+                fill(*circle_color)
             circle((x, y), CIRCLE_RAD)
 
     def draw_grid(self):
@@ -114,7 +119,8 @@ def draw():
     while spiral.cur_border_len < WIDTH:
         spiral.step()
     # spiral.draw_grid()
-    spiral.draw_primes()
+    cmap = matplotlib.cm.get_cmap('viridis')
+    spiral.draw_primes(cmap=cmap)
 
 
 def key_pressed(event):
