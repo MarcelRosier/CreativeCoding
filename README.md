@@ -3,19 +3,18 @@ A collection of somewhat artistic implementations of numerous mathematical sensa
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and various generative art conference talks, empowered by [p5js](https://p5js.org/) and its python counterpart [p5py](https://github.com/p5py/p5).
 
 ## Ulam Spiral
-<img align="left" src="media/ulam_spiral/ulam_explanation.png" width="400" height="400"/>
-
 Implementation of the classical square [Ulam Spiral](https://en.wikipedia.org/wiki/Ulam_spiral).  
 Positive integers are arranged in a spiral while marking prime numbers.  
 This results in a non-random pattern.  
-<img align="left" src="media/ulam_spiral/ulam_viridis.png" width="800" height="800"/>
-
-<div style="clear:both;"></div>
+![ulam explanation](media/ulam_spiral/ulam_explanation.png)
+![ulam viridis](media/ulam_spiral/ulam_viridis.png)
 
 
 ## Forest on fire
 <img align="left" src="media/forest_on_fire/forest.gif" width="400" height="400"/>
-Simulation of a burning forest. Guided by a initial population, tree sparn and fire spawn probability. A fire can spread to surrounding trees and lives only for a single frame. Quite close code replicat of [this video](https://www.youtube.com/watch?v=lJ2VlcI_JuY).
+
+Simulation of a burning forest. Guided by a initial population, tree spawn and fire spawn probability.  
+A fire can spread to surrounding trees and lives only for a single frame. Quite close code replication of [this video](https://www.youtube.com/watch?v=lJ2VlcI_JuY).
 <div style="clear:both;"></div>
 
 
