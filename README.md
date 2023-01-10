@@ -8,7 +8,8 @@ Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and var
 A collection of animations that spiral around the idea of periodicity.  
 Heavily inspired by [beesandbombs](https://twitter.com/beesandbombs).
 
-<img src="media/harmonic_motion/green.gif" alt="spinning_cube" width="400"/>
+<img src="media/harmonic_motion/cubes.gif" alt="spinning_cube" width="400"/>
+<img src="media/harmonic_motion/spheres.gif" alt="spheres" width="400"/>
 
 ## Ulam Spiral
 
