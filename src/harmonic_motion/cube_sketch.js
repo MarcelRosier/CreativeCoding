@@ -23,7 +23,7 @@ function setup() {
   console.log(frames);
 }
 
-function draw() {
+function purple_cube_wave() {
   background(0);
 
   // camera & orientation
@@ -50,7 +50,7 @@ function draw() {
   directionalLight(255, 0, 255, light_pos);
   // stroke(255);
   // rotateX(PI / 6 + cur_angle / 10);
-  rotateY(PI / 8 + cur_angle);
+  // rotateY(PI / 8 + cur_angle);
   specularMaterial(3, 196, 161);
   let bar_spacing = bar_width / 4;
   for (let z = -width / 2; z < width / 2; z += bar_width) {
@@ -70,6 +70,10 @@ function draw() {
     bar_width /= BAR_GROWTH_FACTOR;
     is_shrinking = bar_width > 10;
   }
+}
+
+function draw() {
+  purple_cube_wave();
 }
 
 function keyPressed() {
