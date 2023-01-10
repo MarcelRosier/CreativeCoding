@@ -8,8 +8,6 @@ Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and var
 A collection of animations that spiral around the idea of periodicity.  
 Heavily inspired by [beesandbombs](https://twitter.com/beesandbombs).
 
-<!-- ![spinning_cube](media/harmonic_motion/green.gif) -->
-<img src="media/harmonic_motion/green.gif" alt="spinning_cube" width="400"/>
 <img src="media/harmonic_motion/green.gif" alt="spinning_cube" width="400"/>
 
 ## Ulam Spiral
@@ -18,10 +16,8 @@ Implementation of the classical square [Ulam Spiral](https://en.wikipedia.org/wi
 Positive integers are arranged in a spiral while marking prime numbers.  
 This results in a non-random pattern.
 
-<!-- ![ulam explanation](media/ulam_spiral/ulam_explanation.png) -->
 <img src="media/ulam_spiral/ulam_explanation.png" alt="ulam explanation" width="500"/>
 
-<!-- ![ulam viridis](media/ulam_spiral/ulam_viridis.png) -->
 <img src="media/ulam_spiral/ulam_viridis.png" alt="ulam viridis" width="500"/>
 
 ## Forest on fire
