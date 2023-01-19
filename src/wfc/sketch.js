@@ -15,7 +15,7 @@ const DOWN_MASK = 0b0010;
 const LEFT_MASK = 0b0001;
 
 let tiles = [];
-let dim = 20;
+let dim = 10;
 let tile_size;
 let grid;
 
@@ -57,6 +57,7 @@ class Grid {
   is_done() {
     return this.grid.flat(1).filter((a) => !a.collapsed).length == 0;
   }
+
   collapse() {
     let cell = this.get_lowest_entropy_cell();
     cell.collapsed = true;
@@ -108,6 +109,15 @@ class Grid {
           tile_size,
           tile_size
         );
+      } else {
+        stroke(75);
+        noFill();
+        rect(
+          cell.pos.x * tile_size,
+          cell.pos.y * tile_size,
+          tile_size,
+          tile_size
+        );
       }
     }
   }
@@ -115,7 +125,7 @@ class Grid {
 
 function setup() {
   // frameRate(25);
-  createCanvas(400, 400);
+  createCanvas(800, 800);
 
   // load tiles
   tiles[BLANK] = new Tile(loadImage("tiles/blank.png"));
