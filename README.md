@@ -3,6 +3,12 @@
 A collection of somewhat artistic implementations of numerous mathematical sensations and experiments.  
 Inspired by [The Coding Train](https://www.youtube.com/c/TheCodingTrain) and various generative art conference talks, empowered by [p5js](https://p5js.org/) and its python counterpart [p5py](https://github.com/p5py/p5).
 
+## Tile Builder
+
+Building random patterns based on simple rules following a tile approach.
+
+<img src="media/wfc/tile_builder.gif" alt="tile_builder_gif" width="400"/>
+
 ## Harmonic Motion
 
 A collection of animations that spiral around the idea of periodicity.  

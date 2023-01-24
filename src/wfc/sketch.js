@@ -15,7 +15,7 @@ const DOWN_MASK = 0b0010;
 const LEFT_MASK = 0b0001;
 
 let tiles = [];
-let dim = 10;
+let dim = 50;
 let tile_size;
 let grid;
 
